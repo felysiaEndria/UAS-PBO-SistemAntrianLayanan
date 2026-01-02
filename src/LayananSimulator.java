@@ -107,5 +107,4 @@ public class LayananSimulator {
         // System.out.println(petugas.getNama() + " selesai melayani " +
         // pelanggan.getNama());
     }
-
 }
