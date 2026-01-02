@@ -2,12 +2,13 @@ package simulator;
 
 import manager.AntrianManager;
 import manager.FileManager;
-import model.Pelanggan;
 import model.Petugas;
+import model.Pelanggan;   // ✅ WAJIB
 
 import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
+
 
 /*
 * LayananSimolator
@@ -102,7 +103,7 @@ public class LayananSimulator {
         LocalDateTime waktuSelesai = LocalDateTime.now();
         petugas.selesaiLayanan();
         antrianManager.tambahKeRiwayat(pelanggan);
-        fileManager.simpanLog(pelanggan, petugas.getNama(), waktuSelesai);
+        fileManager.simpanLog("Pelayanan selesai untuk " + pelanggan.getNama());
         // System.out.println(petugas.getNama() + " selesai melayani " +
         // pelanggan.getNama());
     }

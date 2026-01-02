@@ -1,4 +1,9 @@
-public class main {
+package main;
+
+import manager.AntrianManager;
+import model.Pelanggan;
+
+public class Main {
     public static void main(String[] args) {
 
         AntrianManager manager = new AntrianManager();
@@ -16,7 +21,6 @@ public class main {
         Pelanggan p2 = manager.ambilPelangganBerikutnya();
         manager.tambahKeRiwayat(p2);
         System.out.println(p2.getNomorAntrian() + " - " + p2.getNama());
-
 
         System.out.println("\nStatistik:");
         System.out.println("Sisa antrian: " + manager.getJumlahAntrian());
